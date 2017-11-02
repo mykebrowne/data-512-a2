@@ -29,9 +29,9 @@ This file describes the requirements and steps needed to produce __[visualizatio
 
 The ORES (Objective Revision Evaluation Services) __[API](https://ores.wikimedia.org/v3/#/scoring)__ has an end-point which, for a given: <br> 
 
-- context (the name of the Wikipedia project, in this case 'enwiki' for English language Wikipedia)
-- revision id (the id given to the last edit of a particular Wikipedia article)
-- model (scoring model - in this context wp10 
+- Context (the name of the Wikipedia project, in this case 'enwiki' for English language Wikipedia)
+- Revision id (the id given to the last edit of a particular Wikipedia article)
+- Model (scoring model - in this context wp10)
 
 returns a JSON object with a key-value pair "prediction" and one of six quality values. <br>  
 
