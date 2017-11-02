@@ -35,13 +35,14 @@ The ORES (Objective Revision Evaluation Services) __[API](https://ores.wikimedia
 
 returns a JSON object with a key-value pair "prediction" and one of six quality values. <br>  
 
-For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 <br> 
+For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 <br>
+
 returns prediction:  "Stub" 
 
 
 #### Data file 
 
-The __[data file](https://github.com/mykebrowne/data-512-a2/blob/master/page_quality_population.csv)__ created as part of this project has the following structure: <br> 
+The __[data file](https://github.com/mykebrowne/data-512-a2/blob/master/page_quality_population.csv)__ created as part of this project has the following columns: <br> 
 
 - country (character) 
 - article_name (character) - the name of the English language Wikipedia article  
