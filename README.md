@@ -57,6 +57,6 @@ This __[Jupyter notebook](https://github.com/mykebrowne/data-512-a2/blob/master/
 
 
 #### Reflection: Bias in data 
-
+This exercise illustrated how bias can arise in data science projects both intentionally and unintentionally.  First, 
 
 
