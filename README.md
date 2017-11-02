@@ -35,9 +35,7 @@ The ORES (Objective Revision Evaluation Services) __[API](https://ores.wikimedia
 
 returns a JSON object with a key-value pair "prediction" and one of six quality values. <br>  
 
-For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 <br>
-
-returns prediction:  "Stub" 
+For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 returns prediction:  "Stub" 
 
 
 #### Data file 
