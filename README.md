@@ -7,7 +7,6 @@ This file describes the requirements and steps needed to produce __[visualizatio
  - The proportion of English language Wikipedia politician articles which are high quality, as predicted by the __[ORES](https://www.mediawiki.org/wiki/ORES)__ machine learning algorithm. 
  
  
-
 #### Software requirements 
 
 - __[Jupyter notebook](http://jupyter.org/about.html)__ running an R kernel.  
@@ -31,7 +30,7 @@ This file describes the requirements and steps needed to produce __[visualizatio
 The ORES (Objective Revision Evaluation Services) __[API](https://ores.wikimedia.org/v3/#/scoring)__ has an end-point which, for a given: <br> 
 
 - context (the name of the Wikipedia project, in this case 'enwiki' for English language Wikipedia)
-- revision id (the id given to the last edit of a particular Wikipedia article 
+- revision id (the id given to the last edit of a particular Wikipedia article)
 - model (scoring model - in this context wp10 
 
 returns a JSON object with a key-value pair "prediction" and one of six quality values. <br>  
@@ -40,23 +39,25 @@ For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 <br>
 returns prediction:  "Stub" 
 
 
-
 #### Data file 
 
-The __[data file](https://github.com/mykebrowne/data-512-a1/blob/master/en-wikipedia_traffic_200801_201709.csv)__ created as part of this project has the following structure: 
+The __[data file](https://github.com/mykebrowne/data-512-a2/blob/master/page_quality_population.csv)__ created as part of this project has the following structure: <br> 
 
-- year (integer) - the year to which the traffic relates  {2008, 2009, ... 2017}. 
-- month (integer) - the month to which the traffic relates  {1, 2, ... 12}. 
-- pagecount_all_views - the total number of views (English desktop and mobile sites) as defined by the Pagecounts API.
-- pagecount_desktop_views - the total number of views for the English desktop site as defined by the Pagecounts API. 
-- pagecount_mobile_views - the total number of views for the English mobile site as defined by the Pagecounts API. 
-- pageview_all_views - the total number of views (English desktop and mobile sites) as defined by the Pageviews API.
-- pageview_desktop_views - the total number of views for the English desktop site as defined by the Pageviews API. 
-- pageview_mobile_views - the total number of views for the English mobile site as defined by the Pageviews API. 
+- country (character) 
+- article_name (character) - the name of the English language Wikipedia article  
+- revision_id (integer) - the id given to the last edit of the Wikipedia article 
+- article_quality (character) - the quality of the article as predicted by ORES 
+- population (integer) - the Mid-2015 population of the country <br> 
 
-Please note that views from the Pagecounts API includes views from non-human agents (e.g. spiders and webcrawlers).  Views from the Pageviews API has been filtered to exclude views from non-human agents.  
+Please note that this list only includes arcticles from countries which are listed in the __[Mid-2015 population](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14)__ file from the Population Reference Bureau __and__ which have predicted scores from ORES. 
 
 
 #### Steps to reproduce analysis 
 
-This __[Jupyter notebook](https://github.com/mykebrowne/data-512-a1/blob/master/hcds-a1-data-curation.ipynb)__ contains the steps and code needed to reproduce this analysis.  
+This __[Jupyter notebook](https://github.com/mykebrowne/data-512-a2/blob/master/hcds-a2-bias.ipynb)__ contains the steps and code needed to reproduce this analysis.  
+
+
+#### Reflection: Bias in data 
+
+
+
