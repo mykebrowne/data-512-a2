@@ -22,7 +22,8 @@ This file describes the requirements and steps needed to produce __[visualizatio
 - Python 2.2 and above are licensed as per https://docs.python.org/3/license.html
 - Content accessed through the __[Wikimedia Rest API](https://en.wikipedia.org/api/rest_v1/)__ is licensed under the CC-BY-SA 3.0 and GFDL licenses. 
 - Use of the Wikimedia Rest API is under the __[Wikimedia Terms of Use](https://wikimediafoundation.org/wiki/Terms_of_Use/en)__.
-- 
+- Population data is provided by __[Population Reference Bureau](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14)__.
+- Data concerning __English Wikipedia articles on politicians by country(https://figshare.com/articles/Untitled_Item/5513449)__ are licensed under CC-BY-SA 4.0.
 
 
 #### API documentation for ORES 
@@ -38,18 +39,6 @@ returns a JSON object with a key-value pair "prediction" and one of six quality 
 For example: https://ores.wikimedia.org/v3/scores/enwiki/235107991/wp10 <br> 
 returns prediction:  "Stub" 
 
-
-
-
-
-
-
-
-
-
-
-- The __[Pagecounts API](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)__ which provides access to desktop and mobile traffic data from January 2008 to July 2016. 
-- The __[Pageviews API](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)__ which provides acesss to desktop, mobile web and mobile app traffic data from July 2015 to present. 
 
 
 #### Data file 
