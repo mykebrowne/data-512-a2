@@ -22,7 +22,7 @@ This file describes the requirements and steps needed to produce __[visualizatio
 - Content accessed through the __[Wikimedia Rest API](https://en.wikipedia.org/api/rest_v1/)__ is licensed under the CC-BY-SA 3.0 and GFDL licenses. 
 - Use of the Wikimedia Rest API is under the __[Wikimedia Terms of Use](https://wikimediafoundation.org/wiki/Terms_of_Use/en)__.
 - Population data is provided by __[Population Reference Bureau](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14)__.
-- Data concerning __English Wikipedia articles on politicians by country(https://figshare.com/articles/Untitled_Item/5513449)__ are licensed under CC-BY-SA 4.0.
+- Data concerning __[English Wikipedia articles on politicians by country](https://figshare.com/articles/Untitled_Item/5513449)__ are licensed under CC-BY-SA 4.0.
 
 
 #### API documentation for ORES 
