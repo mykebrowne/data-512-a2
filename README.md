@@ -57,6 +57,6 @@ This __[Jupyter notebook](https://github.com/mykebrowne/data-512-a2/blob/master/
 
 
 #### Reflection: Bias in data 
-This exercise illustrated how bias can arise in data science projects both intentionally and unintentionally.  First, 
+This exercise illustrated how bias can arise in data science projects both intentionally and unintentionally.  First, bias can arise due to the nature of the data itself.  For example, by using English language Wikipedia as the source for articles on politicians there is likely to be over-representation of articles from English speaking countries.  It is not unreasonable to think that by using Chinese language Wikipedia, for example, you might see a greater number of articles on Chinese politicians.  Second, bias can be introduced through the way in which concepts in the underlying research question are operationalized.  In this example, the research seeks to understand the ways in which the coverage of politicians and the quality of this coverage varies across country.  Coverage and quality are qualitative terms which have been operationalized in specific, quantitative ways in order to facilitate analysis.  Coverage has been defined as the number of politician articles per population and quality defined as the proportion of articles which have been labelled 'Featured Article' or 'Good article'        
 
 
